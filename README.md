@@ -9,7 +9,7 @@ Get your list of shazams
 
 4. Paste following code in your browser addressline:
 ```javascript
-javascript: console.log('Your Shazam List: =====================================================================\r\n', Array.prototype.slice.apply(document.querySelector('.panel-bd.panel-bd-wide').children).reduce(function(list, li){list.push(li.querySelector('.title').textContent.trim() + '  -  ' +  li.querySelector('.artist').textContent.trim()); return list}, []).join('\r\n'));
+javascript: console.log('Your Shazam List... =====================================================================\r\n', Array.prototype.slice.apply(document.querySelector('.panel-bd.panel-bd-wide').children).reduce(function(list, li){list.push(li.querySelector('.title').textContent.trim() + '  -  ' +  li.querySelector('.artist').textContent.trim()); return list}, []).join('\r\n'), '\r\nEnd of List ========================================================================\r\n');
 ```
 NOTE: Some browsers (Chrome?) cut "javascript:" left part of your paste, so you need add this manually in this case.
 
